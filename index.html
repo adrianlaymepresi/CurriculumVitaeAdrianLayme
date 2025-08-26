@@ -1,0 +1,367 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HOJA DE VIDA PRESI</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/base.css">
+</head>
+<body class="body">
+    <!-- Música de fondo -->
+    <audio id="bgm" src="audio/musica.mp3" preload="auto" loop></audio>
+    <!-- Botón fallback (por si el navegador bloquea el autoplay) -->
+    <button id="bgm-toggle" aria-label="Activar música" title="Activar música">🎵 Activar música</button>
+
+    <header class="header">
+        <div class="header__contenedor container">
+            <div class="header__lado-izquierdo">
+                <div class="header__foto-contenedor">
+                    <a href="index.html">
+                        <img src="img/fotoPerfil.jpg" alt="Foto de Perfil" class="header__foto">
+                    </a>
+                </div>
+                <h1 class="header__titulo m-0">Ignacio Adrian Layme Delgado</h1>
+            </div>
+            <div class="header__lado-derecho">
+                <button class="header__toggle" type="button" data-bs-toggle="offcanvas" data-bs-target="#barraAcciones" aria-controls="barraAcciones">☰ MENU</button>
+            </div>
+        </div>
+    </header>
+
+    <div class="offcanvas offcanvas-start barra" tabindex="-1" id="barraAcciones" aria-labelledby="barraAccionesLabel">
+        <div class="offcanvas-header barra__encabezado">
+            <h5 class="offcanvas-title barra__titulo" id="barraAccionesLabel">🛠️ ACCIONES</h5>
+            <button type="button" class="btn-close barra__cerrar" data-bs-dismiss="offcanvas" aria-label="Cerrar"></button>
+        </div>
+        <div class="offcanvas-body barra__cuerpo">
+            <nav class="barra__nav d-flex flex-column gap-2">
+                <a href="#informacion" class="barra__link btn btn-outline-dark" data-bs-dismiss="offcanvas">
+                    <i class="bi bi-person-badge-fill"></i> Información Personal
+                </a>
+                <a href="#objetivo" class="barra__link btn btn-outline-dark" data-bs-dismiss="offcanvas">
+                    <i class="bi bi-bullseye"></i> Objetivo Profesional
+                </a>
+                <a href="#experiencia" class="barra__link btn btn-outline-dark" data-bs-dismiss="offcanvas">
+                    <i class="bi bi-briefcase-fill"></i> Experiencia Laboral
+                </a>
+                <a href="#educacion" class="barra__link btn btn-outline-dark" data-bs-dismiss="offcanvas">
+                    <i class="bi bi-mortarboard-fill"></i> Educación
+                </a>
+                <a href="#habilidades" class="barra__link btn btn-outline-dark" data-bs-dismiss="offcanvas">
+                    <i class="bi bi-lightning-fill"></i> Habilidades
+                </a>
+                <a href="#idiomas" class="barra__link btn btn-outline-dark" data-bs-dismiss="offcanvas">
+                    <i class="bi bi-translate"></i> Idiomas
+                </a>
+                <a href="#certificaciones" class="barra__link btn btn-outline-dark" data-bs-dismiss="offcanvas">
+                    <i class="bi bi-award-fill"></i> Certificaciones
+                </a>
+                <a href="#referencias" class="barra__link btn btn-outline-dark" data-bs-dismiss="offcanvas">
+                    <i class="bi bi-people-fill"></i> Referencias
+                </a>
+            </nav>
+        </div>
+    </div>
+
+    <main class="main">
+        <div class="main__contenedor container">
+
+            <!-- Información Personal (70/30) -->
+            <section id="informacion" class="main__seccion info">
+            <div class="info__contenedor container">
+                <div class="info__col info__texto">
+                <h2 class="info__titulo">Información Personal</h2>
+                <p class="info__parrafo">
+                    Estudiante de Ingeniería de Sistemas apasionado por la resolución de problemas lógicos y la búsqueda de soluciones eficientes e innovadoras. Destaco por mis habilidades en matemáticas, física y pensamiento analítico, así como por mi capacidad para aprender rápidamente y adaptarme a nuevos retos. Manejo el idioma inglés como segunda lengua y disfruto comunicarme y conectar con personas de diferentes entornos. En trabajos en equipo, me enfoco en guiar e inspirar para que todos puedan aportar lo mejor de sí, fomentando un ambiente colaborativo y positivo.
+                </p>
+
+                <ul class="info__lista">
+                    <li><i class="bi bi-patch-check-fill"></i> Enfoque en QA y Ciberseguridad.</li>
+                    <li><i class="bi bi-lightning-charge-fill"></i> Proactivo, curioso y orientado a resultados.</li>
+                    <li><i class="bi bi-people-fill"></i> Trabajo en equipo y comunicación clara.</li>
+                </ul>
+
+                <div class="info__chips">
+                    <a class="info__chip" href="https://maps.app.goo.gl/3qBrd55LKDA9BPhGA" target="_blank"><i class="bi bi-geo-alt"></i> Sucre, Bolivia</a>
+                    <a class="info__chip" href="mailto:ignacioadrianlaymedelgado@gmail.com"><i class="bi bi-envelope"></i> ignacioadrianlaymedelgado@gmail.com</a>
+                    <a class="info__chip" href="https://github.com/adrianlaymepresi" target="_blank"><i class="bi bi-github"></i> GitHub</a>
+                    <a class="info__chip" href="https://www.linkedin.com/in/TU_USUARIO" target="_blank"><i class="bi bi-linkedin"></i> LinkedIn</a>
+                </div>
+                </div>
+
+                <div class="info__col info__media">
+                <div class="info__video-marco">
+                    <video class="info__video" src="video/infoPersonal.mp4" autoplay loop muted playsinline></video>
+                </div>
+                </div>
+            </div>
+            </section>
+
+            <!-- Objetivo Profesional (30/70) -->
+            <section id="objetivo" class="main__seccion info info--invertida">
+            <div class="info__contenedor container">
+                <div class="info__col info__texto">
+                <h2 class="info__titulo">Objetivo Profesional</h2>
+                <p class="info__parrafo">
+                    Estudiante de Ingeniería de Sistemas apasionado por la resolución de problemas y la búsqueda de soluciones eficientes. Mi objetivo es desarrollarme como Especialista en QA y Ciberseguridad, combinando mi pensamiento lógico, curiosidad y atención al detalle para garantizar software de la más alta calidad y protegido contra vulnerabilidades. Me motiva detectar y prevenir errores antes de que lleguen al usuario final, así como anticipar riesgos de seguridad para salvaguardar la información y la confianza de los clientes. Disfruto trabajar en equipo, inspirar a otros y aportar una visión crítica y constructiva que eleve el nivel de cada proyecto.
+                </p>
+                <ul class="info__lista">
+                    <li><i class="bi bi-shield-lock-fill"></i> Protección de datos y prevención de vulnerabilidades.</li>
+                    <li><i class="bi bi-bug-fill"></i> Pruebas automatizadas y calidad continua.</li>
+                    <li><i class="bi bi-graph-up-arrow"></i> Mejora basada en métricas y retroalimentación.</li>
+                </ul>
+                </div>
+
+                <div class="info__col info__media">
+                <div class="info__video-marco">
+                    <video class="info__video" src="video/objetivoProfesional.mp4" autoplay loop muted playsinline></video>
+                </div>
+                </div>
+            </div>
+            </section>
+
+            <!-- Experiencia Laboral (70/30) -->
+            <section id="experiencia" class="main__seccion info">
+            <div class="info__contenedor container">
+                <div class="info__col info__texto">
+                <h2 class="info__titulo">Experiencia Laboral</h2>
+
+                <p class="info__parrafo"><strong>Calculadora de Cinemática – Windows Forms + C#</strong><br>
+                    <em>Desarrollador | 2024 – 1er semestre</em><br>
+                    Aplicación de escritorio capaz de resolver y calcular automáticamente las variables de los seis movimientos principales de la cinemática (MRU, MRUV, Caída Libre, Movimiento Parabólico, MCU y MCUV) con la mínima entrada de datos. Implementé lógica matemática avanzada y optimización para resultados rápidos y precisos; graficado de resultados con Python (tkBootstrap).
+                </p>
+
+                <p class="info__parrafo"><strong>Sistema de Inventario y Ventas – WPF + C#</strong><br>
+                    <em>Desarrollador y Diseñador de Arquitectura | 2024 – 2do semestre</em><br>
+                    Sistema de escritorio para gestión de ventas, generación de recibos y manejo de cuentas con diferentes permisos (dueño y ayudante). Interfaz en WPF y persistencia en archivos TXT como base de datos.
+                </p>
+
+                <p class="info__parrafo"><strong>Sistema Integral para Restaurante – Escritorio, Web y Móvil</strong><br>
+                    <em>Desarrollador y QA en equipo | 2025 – 3er semestre</em><br>
+                    Ecosistema con tres plataformas:
+                    <ul class="info__lista">
+                    <li><i class="bi bi-pc-display-horizontal"></i> <strong>Escritorio (C# WPF):</strong> Gestión interna y venta con recibos.</li>
+                    <li><i class="bi bi-window-stack"></i> <strong>Web:</strong> Cocina/meseros (pedidos), reservas y menú para clientes.</li>
+                    <li><i class="bi bi-phone"></i> <strong>Móvil (Android Java):</strong> App para pensionados (elegir comida diaria, ver plan y saldos).</li>
+                    </ul>
+                </p>
+                </div>
+
+                <div class="info__col info__media">
+                <div class="info__video-marco">
+                    <video class="info__video" src="video/experienciaLaboral.mp4" autoplay loop muted playsinline></video>
+                </div>
+                </div>
+            </div>
+            </section>
+
+            <!-- Educación (30/70) -->
+            <section id="educacion" class="main__seccion info info--invertida">
+            <div class="info__contenedor container">
+                <div class="info__col info__texto">
+                <h2 class="info__titulo">Educación</h2>
+                <ul class="info__lista">
+                    <li><i class="bi bi-mortarboard-fill"></i> <strong>Ingeniería de Sistemas</strong> — Universidad del Valle (Univalle), Sede Sucre – Bolivia. <em>2024 – Actualidad</em></li>
+                    <li><i class="bi bi-journal-bookmark-fill"></i> <strong>Bachiller en Humanidades</strong> — Colegio del Sagrado Corazón de Jesús, Sucre – Bolivia. <em>2012 – 2023</em></li>
+                </ul>
+                </div>
+
+                <div class="info__col info__media">
+                <div class="info__video-marco">
+                    <video class="info__video" src="video/education.mp4" autoplay loop muted playsinline></video>
+                </div>
+                </div>
+            </div>
+            </section>
+
+            <!-- Habilidades (70/30) -->
+            <section id="habilidades" class="main__seccion info">
+            <div class="info__contenedor container">
+
+                <div class="info__col info__texto">
+                <h2 class="info__titulo">Habilidades</h2>
+
+                <p class="info__parrafo"><strong>Lenguajes de programación</strong></p>
+                <ul class="info__lista">
+                    <li><i class="devicon-csharp-plain colored"></i> C#</li>
+                    <li><i class="devicon-python-plain colored"></i> Python</li>
+                    <li><i class="devicon-java-plain colored"></i> Java</li>
+                    <li><i class="devicon-kotlin-plain colored"></i> Kotlin</li>
+                    <li><i class="devicon-javascript-plain colored"></i> JavaScript</li>
+                </ul>
+
+                <p class="info__parrafo"><strong>Lenguajes de marcado y estilo</strong></p>
+                <ul class="info__lista">
+                    <li><i class="devicon-html5-plain colored"></i> HTML</li>
+                    <li><i class="devicon-css3-plain colored"></i> CSS</li>
+                </ul>
+
+                <p class="info__parrafo"><strong>Frameworks y tecnologías</strong></p>
+                <ul class="info__lista">
+                    <li><i class="devicon-bootstrap-plain colored"></i> Bootstrap (responsive)</li>
+                    <li><i class="devicon-react-original colored"></i> React (JavaScript)</li>
+                    <li><i class="devicon-nodejs-plain colored"></i> Node.js (backend)</li>
+                </ul>
+
+                <p class="info__parrafo"><strong>Bases de datos</strong></p>
+                <ul class="info__lista">
+                    <li><i class="devicon-mysql-plain colored"></i> MySQL</li>
+                    <li><i class="devicon-mongodb-plain colored"></i> MongoDB</li>
+                    <li><i class="devicon-sqlite-plain colored"></i> SQLite</li>
+                </ul>
+
+                <p class="info__parrafo"><strong>IoT y hardware</strong></p>
+                <ul class="info__lista">
+                    <li><i class="bi bi-cpu"></i> Manejo de sensores y microcontroladores (proyectos IoT)</li>
+                </ul>
+
+                <p class="info__parrafo"><strong>Entornos y herramientas</strong></p>
+                <ul class="info__lista">
+                    <li><i class="devicon-visualstudio-plain colored"></i> Visual Studio</li>
+                    <li><i class="devicon-vscode-plain colored"></i> Visual Studio Code</li>
+                    <li><i class="devicon-arduino-plain colored"></i> Arduino IDE</li>
+                </ul>
+                </div>
+
+                <div class="info__col info__media">
+                <div class="info__video-marco">
+                    <video class="info__video" src="video/habiliades.mp4" autoplay loop muted playsinline></video>
+                </div>
+                </div>
+
+            </div>
+            </section>
+
+
+            <!-- Idiomas (30/70) -->
+            <section id="idiomas" class="main__seccion info info--invertida">
+            <div class="info__contenedor container">
+                <div class="info__col info__texto">
+                <h2 class="info__titulo">Idiomas</h2>
+                <ul class="info__lista">
+                    <li><i class="bi bi-chat-dots-fill"></i> Español: Nativo</li>
+                    <li><i class="bi bi-translate"></i> Inglés: B2</li>
+                </ul>
+                </div>
+
+                <div class="info__col info__media">
+                <div class="info__video-marco">
+                    <video class="info__video" src="video/idiomas.mp4" autoplay loop muted playsinline></video>
+                </div>
+                </div>
+            </div>
+            </section>
+
+            <!-- Certificaciones (70/30) -->
+            <section id="certificaciones" class="main__seccion info">
+            <div class="info__contenedor container">
+                <div class="info__col info__texto">
+                    <h2 class="info__titulo">Certificaciones y Cursos</h2>
+                    <ul class="info__lista">
+                        <li><i class="bi bi-hand-thumbs-up-fill"></i> <strong>Voluntariado</strong> — 37th International Olympiad in Informatics (IOI 2025), Sede Sucre – Bolivia. <em>2025</em></li>
+
+                        <li><i class="bi bi-database-fill-gear"></i> <strong>Database Design</strong> — Oracle Academy. <em>29/05/2025</em></li>
+
+                        <li><i class="bi bi-shield-lock-fill"></i> <strong>Introduction to Cybersecurity</strong> — Cisco Networking Academy. <em>07/12/2024</em></li>
+
+                        <li><i class="bi bi-diagram-3-fill"></i> <strong>Data Foundations</strong> — Oracle Academy. <em>07/12/2024</em></li>
+
+                        <li><i class="bi bi-cpu-fill"></i> <strong>Artificial Intelligence Fundamentals</strong> — IBM SkillsBuild. <em>10/12/2024</em></li>
+
+                        <li><i class="bi bi-trophy-fill"></i> <strong>3er lugar</strong> — Torneo Nacional de Programación (Universidad del Valle, todas las sedes), Sucre. <em>Noviembre 2024</em></li>
+
+                        <li><i class="bi bi-wifi"></i> <strong>Introduction to Internet of Things</strong> — Cisco Networking Academy. <em>06/10/2024</em></li>
+
+                        <li><i class="bi bi-code-slash"></i> <strong>Python Essentials 1</strong> — Cisco Networking Academy. <em>06/10/2024</em></li>
+
+                        <li><i class="bi bi-ethernet"></i> <strong>Get Connected</strong> — Cisco Networking Academy. <em>24/03/2024</em></li>
+
+                        <li><i class="bi bi-award-fill"></i> <strong>Certificate of Proficiency in English (CBA)</strong> — Centro Boliviano Americano (CBA), Sucre, Bolivia. <em>29 de noviembre de 2023</em></li>
+                    </ul>
+                </div>
+                <div class="info__col info__media">
+                    <div class="info__video-marco">
+                        <img class="info__video" src="video/certification.jpg" alt="Certificados">
+                    </div>
+                </div>
+            </div>
+            </section>
+
+            <!-- Referencias (30/70) -->
+            <section id="referencias" class="main__seccion info info--invertida">
+            <div class="info__contenedor container">
+                <div class="info__col info__texto">
+                <h2 class="info__titulo">Referencias</h2>
+                <ul class="info__lista">
+                    <li><i class="bi bi-person-badge"></i> Ing. Misael David Condo Rodríguez — Docente, Univalle.</li>
+                    <li><i class="bi bi-person-badge"></i> Ing. Edgar Zambrana Quiñonez — Docente, Univalle.</li>
+                    <li><i class="bi bi-person-badge"></i> Ing. Alex Jimenez Subieta — Docente, Univalle.</li>
+                    <li><i class="bi bi-person-badge"></i> Ing. Angela Rosales Ugarte — Docente, Univalle.</li>
+                </ul>
+                </div>
+
+                <div class="info__col info__media">
+                <div class="info__video-marco">
+                    <video class="info__video" src="video/referencias.mp4" autoplay loop muted playsinline></video>
+                </div>
+                </div>
+            </div>
+            </section>
+        </div>
+
+        <!-- Animación PRESI -->
+        <section id="animacion-presi" class="animacion__seccion">
+            <div id="three-container-presi"></div>
+        </section>
+
+    </main>
+
+
+    <footer class="footer-social">
+        <div class="footer-social__contenedor">
+            <a class="footer-social__item footer-social__item--whatsapp" href="https://wa.me/59176124472" target="_blank" rel="noopener" aria-label="WhatsApp">
+                <button class="footer-social__boton"><i class="fab fa-whatsapp"></i></button>
+            </a>
+            <a class="footer-social__item footer-social__item--facebook" href="https://www.facebook.com/adrian.delgad.92" target="_blank" rel="noopener" aria-label="Facebook">
+                <button class="footer-social__boton"><i class="fab fa-facebook-f"></i></button>
+            </a>
+            <a class="footer-social__item footer-social__item--instagram" href="https://www.instagram.com/presi1221" target="_blank" rel="noopener" aria-label="Instagram">
+                <button class="footer-social__boton"><i class="fab fa-instagram"></i></button>
+            </a>
+            <a class="footer-social__item footer-social__item--linkedin" href="https://www.linkedin.com/in/ignacio-adrian-layme-delgado-48830434a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener" aria-label="LinkedIn">
+                <button class="footer-social__boton"><i class="fab fa-linkedin-in"></i></button>
+            </a>
+            <a class="footer-social__item footer-social__item--discord" href="https://discord.gg/eNr32x6w" target="_blank" rel="noopener" aria-label="Discord">
+                <button class="footer-social__boton"><i class="fab fa-discord"></i></button>
+            </a>
+            <a class="footer-social__item footer-social__item--youtube" href="https://www.youtube.com" target="_blank" rel="noopener" aria-label="YouTube">
+                <button class="footer-social__boton"><i class="fab fa-youtube"></i></button>
+            </a>
+            <a class="footer-social__item footer-social__item--github" href="https://github.com/adrianlaymepresi" target="_blank" rel="noopener" aria-label="GitHub">
+                <button class="footer-social__boton"><i class="fab fa-github"></i></button>
+            </a>
+            <a class="footer-social__item footer-social__item--tiktok" href="http://tiktok.com/@presi1242" target="_blank" rel="noopener" aria-label="TikTok">
+                <button class="footer-social__boton"><i class="fab fa-tiktok"></i></button>
+            </a>
+        </div>
+    </footer>
+
+    <script src="js/canvas.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- === Librerías necesarias animacion === -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r75/three.min.js"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/175711/bas.js"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/175711/TextGeometry.js"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/175711/FontUtils.js"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/175711/pnltri.min.js"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/175711/droid_sans_bold.typeface.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
+    <script src="js/animacion.js"></script>
+    <script src="js/audio.js"></script>
+</body>
+</html>
